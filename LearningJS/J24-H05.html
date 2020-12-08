@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Spam Detector</title>
+    </head>
+    <body>
+        <script>
+            function detectSpam(input) {
+                input = input.toLowerCase();
+                return input.indexOf("fake");
+            }
+
+            var myString = prompt("Enter a string");
+            alert(detectSpam(myString));
+            
+            // Excercise 1
+            function editString(string, nRemove) {
+
+                alert(string.substr(0, (string.length - nRemove)));
+            }
+            
+            var uString = prompt("Enter a string");
+            var uRemove = prompt("Enter number of chars to remove from end");
+            editString(uString, uRemove)
+        </script>
+    </body>
+</html>
